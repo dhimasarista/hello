@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS untuk membuat konten berada di tengah layar */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tempat untuk menampilkan teks -->
+    <div id="textContainer">
+        <h1>Salam Hangat &#128591;</h1>
+        <p>Anda orang ke- 64 minta hack facebook</p>
+        <!-- Tombol yang akan menampilkan emote -->
+        <button id="tombolEmote">Tampilkan Emote</button>
+    </div>
+    
+    <!-- Tempat untuk menampilkan emote (awalnya disembunyikan) -->
+    <div id="emoteContainer" style="display: none;">
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⠿⠿⠛⠛⠿⠿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠰⠛⢁⣠⣤⣶⣶⣶⣶⣤⣄⡈⠛⠆⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢀⣠⣾⣿⣿⡿⠋⣉⠉⢻⣿⣿⣿⣷⣄⡀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣰⣿⡿⠋⠘⣿⣇⠀⠿⠇⢸⣿⡗⠉⠻⣿⣿⣆⠀⠀⠀⠀
+⠀⠀⠀⣼⣿⣿⣧⣄⠀⠻⣿⣷⣤⣶⣿⠟⠁⢀⣴⣿⣿⣿⣧⠀⠀⠀
+⠀⠀⣼⣿⣿⣿⣿⣿⣷⣤⣀⣉⠉⢉⣀⣠⣶⣿⣿⣿⣿⣿⣿⣧⠀⠀
+⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀
+⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷
+⠉⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠉
+    </div>
+
+    <img style="width: 100%; height: 100%; display: none;" id="imageContain" src="https://e1.pxfuel.com/desktop-wallpaper/654/786/desktop-wallpaper-kuntilanak-hantu-seram-kuntilanak.jpg" alt="">
+    
+    <script>
+        // Fungsi untuk menampilkan emote ketika tombol diklik
+        document.getElementById('tombolEmote').addEventListener('click', function() {
+            // Hapus tombol dan teks
+            var textContainer = document.getElementById('textContainer');
+            textContainer.style.display = 'none';
+            
+            var emoteContainer = document.getElementById('emoteContainer');
+            
+            emoteContainer.style.display = 'block';
+            setInterval(() => {
+                emoteContainer.style.display = 'none';
+                document.getElementById("imageContain").style.display = "block";
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
